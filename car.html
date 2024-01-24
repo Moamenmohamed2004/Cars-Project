@@ -1,0 +1,219 @@
+<html>
+<head>
+<link rel="stylesheet" href="car.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#Cars">Cars</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+        }
+        </script>      
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 2</div>
+              <img src="1.jpg" style="width:100%">
+              <div class="text">BMW</div>
+            </div>
+        
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 2</div>
+              <img src="13.jpg" style="width:100%">
+              <div class="text">BMW</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+<hr color="red">
+<button class="btn success">Cars</button>
+<br>
+
+        </br>
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="3.jpg" alt="Cars" style="width:100%">
+          <h3>BMW M5</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="4.jpeg" alt="Cars" style="width:100%">
+          <h3>BMW M5</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="5.jpg" alt="Cars" style="width:100%">
+          <h3>BMW M3</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="6.jpg" alt="Cars" style="width:100%">
+          <h3>BMW M5</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+      <div class="row">
+        </div>
+            <div class="column">
+                <div class="content">
+                <img src="7.jpeg" alt="Cars" style="width:100%">
+                  <h3>BMW M5</h3>
+                  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+                <div class="column">
+                    <div class="content">
+                    <img src="8.jpg" alt="Cars" style="width:100%">
+                      <h3>BMW M5</h3>
+                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    </div>
+                </div>
+                    <div class="column">
+                        <div class="content">
+                        <img src="9.jpeg" alt="Cars" style="width:100%">
+                          <h3>BMW M5</h3>
+                          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                        <img src="10.jpg" alt="Cars" style="width:100%">
+                          <h3>BMW M5</h3>
+                          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                        </div>
+    </div>
+    </div>
+    <hr color="red">
+    <br>
+
+    <br>
+    <button class="btn success">Contact BMW</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img class="imgContact" src="18.jpeg" >
+    <div class="form">
+      
+    <form action="">
+
+      <label class="textform" >First Name</label><br>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <br>
+      <label class="textform">Last Name</label><br>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <br>
+      <label class="textform">Country</label><br>
+      <select id="country" name="country">
+        <option value="EGYPT">EGYPT</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  <br>
+      <label class="textform">Subject</label><br>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<hr color="red">
+
+  </div>
+
+   
+    <br>
+    <button class="btn success">About Me</button>
+    <br>
+    <br>
+    <br>
+<img class="sticky" src="11.jpg" alt="Avatar">
+<div class="about">
+
+<h1>My Skills</h1>
+
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>PHP</p>
+<div class="container">
+  <div class="skills php">60%</div>
+</div>
+</body>
